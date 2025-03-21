@@ -1,0 +1,71 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 140px 40px 100px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.story {
+  font-size: 1.5rem;
+  color: #d1d1d1;
+  max-width: 900px;
+  line-height: 1.6;
+  margin-bottom: 60px;
+}
+
+.subtitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: cyan;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.skillsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin-top: 50px;
+}
+
+.skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, background 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.skill:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #0070f3;
+}
+
+.skillName {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff;
+}

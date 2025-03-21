@@ -1,0 +1,60 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 0;
+  background: rgba(10, 10, 10, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  transition: background 0.3s ease-in-out;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navLinks li {
+  position: relative;
+}
+
+.navLinks li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navLinks li a:hover {
+  color: #0070f3;
+}
+
+.navLinks li::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: #0070f3;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.navLinks li:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.active a {
+  color: #0070f3;
+}
+
+.active::after {
+  width: 100%;
+  left: 0;
+}

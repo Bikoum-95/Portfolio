@@ -1,0 +1,72 @@
+:root {
+  --primary-color: #00eaff;
+  --secondary-color: #120e26;
+  --text-color: #e0e0e0;
+  --accent-color: #ff0077;
+  --gradient-bg: linear-gradient(135deg, #120e26, #1b1b3a);
+  --shadow-color: rgba(0, 234, 255, 0.3);
+}
+
+body {
+  background: var(--gradient-bg);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+h1, h2, h3 {
+  color: var(--primary-color);
+  text-shadow: 0 0 10px var(--shadow-color);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+button {
+  background: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px var(--shadow-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px var(--shadow-color);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+      font-size: 14px;
+  }
+  button {
+      padding: 8px 16px;
+  }
+}
