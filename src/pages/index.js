@@ -21,7 +21,7 @@ export default function Home() {
                 />
             </div>
             <h1 className={styles.name}>Bikoumou Sven-Soren</h1>
-            <p className={styles.slogan}>Etudiant Tech | Technico-Fonctionne</p>
+            <p className={styles.slogan}>Etudiant Tech | Technico-Fonctionnel</p>
         </div>
     );
 }
