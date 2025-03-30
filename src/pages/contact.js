@@ -1,5 +1,5 @@
 import { FaDiscord, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
-import styles from '../styles/Contact.module.css';
+import styles from "../styles/Contact.module.css";
 
 const contactInfo = [
     { icon: FaEnvelope, label: "Email", link: "/", text: "sorenbikouta11@gmail.com" },

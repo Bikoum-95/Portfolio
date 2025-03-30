@@ -1,5 +1,5 @@
-import styles from '../styles/About.module.css';
-import { FaReact, FaJs, FaNodeJs, FaDatabase, FaPython } from "react-icons/fa";
+import styles from "../styles/About.module.css";
+import { FaJs, FaNodeJs, FaDatabase, FaPython } from "react-icons/fa";
 import { SiNextdotjs, SiTypescript, SiGo } from "react-icons/si";
 
 const skills = [
