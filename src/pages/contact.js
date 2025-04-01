@@ -1,4 +1,4 @@
-import { FaDiscord, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaDiscord, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa"; 
 import styles from "../styles/Contact.module.css";
 
 const contactInfo = [
@@ -13,7 +13,8 @@ export default function Contact() {
         <div className={styles.contactContainer}>
             <h2 className={styles.contactTitle}>Me Contacter</h2>
             <p className={styles.contactText}>
-            Vous pouvez me contacter sur mes différents réseaux sociaux. Je suis ouvert à toute opportunité de collaboration ou de discussion. N'hésitez pas!
+                Vous pouvez me contacter sur mes différents réseaux sociaux. 
+                Je suis ouvert à toute opportunité de collaboration ou de discussion. N'hésitez pas !
             </p>
 
             <div className={styles.contactGrid}>
@@ -27,6 +28,11 @@ export default function Contact() {
                     </a>
                 ))}
             </div>
+
+            {/* Bouton Télécharger CV */}
+            <a href="/CV_Sven_Soren_Bikoumou.pdf" download className={styles.cvButton}>
+                Télécharger mon CV
+            </a>
         </div>
     );
 }
