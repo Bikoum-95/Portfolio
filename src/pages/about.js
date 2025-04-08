@@ -18,11 +18,12 @@ export default function About() {
             <h1 className={styles.title}>À propos de moi</h1>
             
             <p className={styles.story}>
-                Depuis mon plus jeune âge, l'informatique et le développement ont toujours été une passion.  
-                Curieux et motivé, j’ai exploré plusieurs domaines avant de me spécialiser dans le développement web et mobile.  
-                Actuellement étudiant à l'ETNA, je suis en quête d’une alternance pour mettre en pratique mes compétences,  
-                collaborer sur des projets concrets et monter en expertise.  
-                Mon objectif ? Développer des solutions innovantes et performantes tout en continuant à apprendre chaque jour.
+            Depuis toujours, j’ai été passionné par la tech. 
+            Ce qui m’a d’abord attiré, c’est de comprendre comment les choses fonctionnent, puis j’ai eu envie de créer, d’automatiser, de résoudre des problèmes. 
+            J’ai exploré plusieurs domaines, du développement à la data en passant par l’infra, et aujourd’hui, je me dirige vers un profil polyvalent : développeur, DevOps ou technicien support.
+
+            Étudiant à l’ETNA, je cherche une alternance pour progresser sur le terrain, apprendre auprès de pros et contribuer à des projets concrets. 
+            Ce que je vise ? Monter en compétences, découvrir les réalités du métier, et à terme, évoluer dans la data science, un domaine qui me passionne pour son impact et ses possibilités.
             </p>
 
             <h2 className={styles.subtitle}>Compétences informatiques</h2>
