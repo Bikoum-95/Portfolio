@@ -21,13 +21,9 @@ export default function Home() {
                 />
             </div>
             <h1 className={styles.name}>Bikoumou Sven-Soren</h1>
-                <p className={styles.slogan}>Bienvenue sur mon portfolio !
-                Je suis étudiant à l’ETNA, passionné par la tech et en plein apprentissage du métier de technico-fonctionnel, entre développement, support et infra.
-
-                Ici, je partage mes projets, mon parcours et ce qui me motive au quotidien.
-                N’hésitez pas à naviguer via la barre en haut de page pour en découvrir un peu plus sur moi.
-
-                Bonne visite ! 👋
+                <p className={styles.slogan}>Bienvenue ! Étudiant à l’ETNA et passionné par la tech, je me forme aux métiers technico-fonctionnels, entre dev, support et infra. 
+                    Ce portfolio regroupe mes projets, mon parcours et ce qui m’anime. 
+                    Faites un tour via la barre de navigation pour en découvrir plus ! 👨‍💻
                 </p>
         </div>
     );
