@@ -15,13 +15,13 @@ export default function Navbar() {
         <nav className={styles.navbar}>
             <ul className={styles.navLinks}>
                 <li className={activeSection === "/" ? styles.active : ""}>
-                    <Link href="/">Accueil</Link>
+                    <Link href="/">Home</Link>
                 </li>
                 <li className={activeSection === "/propos" ? styles.active : ""}>
-                    <Link href="/about">À propos</Link>
+                    <Link href="/about">About</Link>
                 </li>
                 <li className={activeSection === "/projects" ? styles.active : ""}>
-                    <Link href="/projects">Projets</Link>
+                    <Link href="/projects">Projects</Link>
                 </li>
                 <li className={activeSection === "/contact" ? styles.active : ""}>
                     <Link href="/contact">Contact</Link>

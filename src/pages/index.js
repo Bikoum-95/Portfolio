@@ -21,9 +21,10 @@ export default function Home() {
                 />
             </div>
             <h1 className={styles.name}>Bikoumou Sven-Soren</h1>
-                <p className={styles.slogan}>Bienvenue ! Étudiant à l’ETNA et passionné par la tech, je me forme aux métiers technico-fonctionnels, entre dev, support et infra. 
-                    Ce portfolio regroupe mes projets, mon parcours et ce qui m’anime. 
-                    Faites un tour via la barre de navigation pour en découvrir plus ! 👨‍💻
+                <p className={styles.slogan}>Welcome!
+                I’m a student at ETNA with a passion for tech, currently training in technico-functional roles, including development, support, and infrastructure.
+                This portfolio showcases my projects, my journey, and what drives me.
+                Feel free to explore through the navigation bar to learn more! 👨‍💻
                 </p>
         </div>
     );

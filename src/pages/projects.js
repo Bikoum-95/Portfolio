@@ -5,19 +5,19 @@ import Image from "next/image";
 const projects = [
     {
         title: "Arduino - ETNAThermos",
-        description: "Un capteur de température intelligent qui communique avec une application mobile via Bluetooth.",
+        description: "An intelligent temperature sensor that communicates with a mobile app via Bluetooth.",
         image: "/image.png",
         github: "https://github.com/Bikoum-95/ETNAThermos#",
     },
     {
         title: "BikoumFlix",
-        description: "Plateforme de streaming vidéo développée avec React et Node.js, pour une expérience utilisateur fluide et immersive.",
+        description: "A video streaming platform developed with React and Node.js, providing a smooth and immersive user experience.",
         image: "/bikoumflix.mp4",
         github: "https://github.com/Bikoum-95/BikoumFlix",
     },
     {
         title: "GeneratorPrime",
-        description: "Application en GOlang permettant de générer et personnaliser des fichiers PDF facilement.",
+        description: "An application in GoLang that allows easy generation and customization of PDF files.",
         pdf: "/Piratetetr.pdf",
         github: "https://github.com/Bikoum-95/GeneratorPrime#",
     }
@@ -32,7 +32,7 @@ export default function Projects() {
 
     return (
         <div className={`${styles.projectsContainer} ${isVisible ? styles.fadeIn : ""}`}>
-            <h1 className={styles.title}>Mes Projets</h1>
+            <h1 className={styles.title}>Here are a few of my projects.</h1>
 
             <div className={styles.projectsWrapper}>
                 {projects.map((project, index) => (
@@ -42,8 +42,7 @@ export default function Projects() {
                                 project.image.endsWith(".mp4") ? (
                                     <video controls className={styles.video}>
                                         <source src={project.image} type="video/mp4" />
-                                        Votre navigateur ne supporte pas la lecture des vidéos.
-                                    </video>
+                                        Your browser does not support video playback.                                    </video>
                                 ) : (
                                     <Image 
                                         src={project.image} 
@@ -72,7 +71,7 @@ export default function Projects() {
                             rel="noopener noreferrer"
                             aria-label={`Voir le projet ${project.title} sur GitHub`}
                         >
-                            Voir sur GitHub
+                            View on GitHub
                         </a>
 
                         {project.pdf && (
@@ -82,7 +81,7 @@ export default function Projects() {
                                 target="_blank" 
                                 rel="noopener noreferrer"
                             >
-                                Voir le PDF
+                                View PDF
                             </a>
                         )}
                     </div>

@@ -3,7 +3,7 @@ import styles from "../styles/Contact.module.css";
 
 const contactInfo = [
     { icon: FaEnvelope, label: "Email", text: "sorenbikouta11@gmail.com" },
-    { icon: FaLinkedin, label: "LinkedIn", link: "https://www.linkedin.com/in/soren-bikouta-b1b840357/", text: "Soren Bikouta" },
+    { icon: FaLinkedin, label: "LinkedIn", link: "https://www.linkedin.com/in/sven-soren-bikoumou-b1b840357/", text: "Soren Bikouta" },
     { icon: FaGithub, label: "GitHub", link: "https://github.com/Bikoum-95", text: "Bikoum-95" },
     { icon: FaDiscord, label: "Discord", text: "bkm_0011" }
 ];
@@ -11,10 +11,10 @@ const contactInfo = [
 export default function Contact() {
     return (
         <div className={styles.contactContainer}>
-            <h2 className={styles.contactTitle}>Me Contacter</h2>
+            <h2 className={styles.contactTitle}>Contact Me</h2>
             <p className={styles.contactText}>
-                Vous pouvez me contacter sur mes différents réseaux sociaux. 
-                Je suis ouvert à toute opportunité de collaboration ou de discussion. N'hésitez pas !
+                Feel free to reach out to me through my social media channels.
+                I’m always open to new opportunities, collaborations, or just a good conversation. Don’t hesitate to get in touch!
             </p>
 
             <div className={styles.contactGrid}>
