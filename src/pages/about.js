@@ -27,7 +27,7 @@ export default function About() {
             My long-term goal? To keep improving and eventually move into data science, a field that truly excites me for its impact and endless possibilities.
             </p>
 
-            <h2 className={styles.subtitle}>Compétences informatiques</h2>
+            <h2 className={styles.subtitle}>IT skills</h2>
             <div className={styles.skillsContainer}>
                 {skills.map(skill => (
                     <div key={skill.name} className={styles.skill}>
