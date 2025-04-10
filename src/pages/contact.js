@@ -30,7 +30,7 @@ export default function Contact() {
             </div>
 
             {/* Bouton Télécharger CV */}
-            <a href="/CV_Sven_Soren_Bikoumou.pdf" download className={styles.cvButton}>
+            <a href="/SorenBikoumouResume.pdf" download className={styles.cvButton}>
                 Télécharger mon CV
             </a>
         </div>
