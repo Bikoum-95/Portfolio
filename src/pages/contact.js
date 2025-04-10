@@ -31,7 +31,7 @@ export default function Contact() {
 
             {/* Bouton Télécharger CV */}
             <a href="/SorenBikoumouResume.pdf" download className={styles.cvButton}>
-                Télécharger mon CV
+                Download CV
             </a>
         </div>
     );

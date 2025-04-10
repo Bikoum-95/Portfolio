@@ -7,13 +7,25 @@
   --shadow-color: rgba(0, 234, 255, 0.3);
 }
 
+/* Base layout fix */
+html, body, #__next {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background: var(--gradient-bg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   color: var(--text-color);
   font-family: 'Poppins', sans-serif;
   transition: all 0.3s ease-in-out;
+  overflow-x: hidden;
 }
 
+/* Typo et couleurs */
 h1, h2, h3 {
   color: var(--primary-color);
   text-shadow: 0 0 10px var(--shadow-color);
@@ -29,6 +41,7 @@ a:hover {
   color: var(--primary-color);
 }
 
+/* Boutons */
 button {
   background: var(--accent-color);
   color: white;
@@ -45,6 +58,7 @@ button:hover {
   box-shadow: 0 6px 15px var(--shadow-color);
 }
 
+/* Animations */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -62,7 +76,7 @@ button:hover {
   }
 }
 
-
+/* Responsive */
 @media (min-width: 769px) and (max-width: 1024px) {
   body {
     font-size: 15px;
