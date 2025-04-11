@@ -1,71 +1,70 @@
 .aboutContainer {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   align-items: center;
-  min-height: 100vh;
+  justify-content: center;
   text-align: center;
-  padding: 140px 40px 100px;
+  padding: 5rem 1.5rem;
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .title {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  margin-bottom: 2rem;
   color: white;
-  margin-bottom: 40px;
 }
 
 .story {
-  font-size: 1.5rem;
-  color: #d1d1d1;
-  max-width: 900px;
-  line-height: 1.6;
-  margin-bottom: 60px;
+  color: #a1a1aa; /* gris clair */
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 3rem;
 }
 
 .subtitle {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: cyan;
-  margin-top: 80px;
-  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #06b6d4; /* cyan-400 */
 }
 
 .skillsContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  max-width: 900px;
-  margin-top: 50px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .skillsContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .skillsContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .skill {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 15px 20px;
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out, background 0.3s;
-  cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.skill:hover {
-  transform: scale(1.05);
-  background: rgba(255, 255, 255, 0.2);
+  gap: 0.5rem;
+  background-color: #18181b; /* zinc-900 */
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
-  font-size: 2rem;
-  color: #0070f3;
+  color: #06b6d4; /* cyan-400 */
+  font-size: 1.25rem;
 }
 
 .skillName {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #ffffff;
+  color: white;
 }
