@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navContainer}>
-        <div className={styles.logo}>Soren</div>
+        <div className={styles.logo}>BKMFOLIO</div>
 
         <div className={styles.burger} onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
