@@ -2,8 +2,8 @@ import { FaDiscord, FaEnvelope, FaLinkedin, FaGithub } from "react-icons/fa";
 import styles from "../styles/Contact.module.css";
 
 const contactInfo = [
-    { icon: FaEnvelope, label: "Email", text: "sorenbikouta11@gmail.com" },
-    { icon: FaLinkedin, label: "LinkedIn", link: "https://www.linkedin.com/in/sven-soren-bikoumou-b1b840357/", text: "Soren Bikouta" },
+    { icon: FaEnvelope, label: "Email", text: "sorenbikoumou11@gmail.com" },
+    { icon: FaLinkedin, label: "LinkedIn", text: "Sven Soren Bikoumou" },
     { icon: FaGithub, label: "GitHub", link: "https://github.com/Bikoum-95", text: "Bikoum-95" },
     { icon: FaDiscord, label: "Discord", text: "bkm_0011" }
 ];
@@ -30,7 +30,7 @@ export default function Contact() {
             </div>
 
             {/* Bouton Télécharger CV */}
-            <a href="/SorenBikoumouResume.pdf" download className={styles.cvButton}>
+            <a href="/CVResume2.pdf" download className={styles.cvButton}>
                 Download CV
             </a>
         </div>
