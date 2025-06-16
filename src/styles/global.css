@@ -1,24 +1,113 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap');
 
+:root {
+  --background-color: #0d1117;
+  --text-color: #c9d1d9;
+  --primary-color: #58a6ff;
+  --font-family: 'Fira Code', monospace;
+  --transition-speed: 0.3s;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: 'Fira Code', monospace;
-  background-color: #0d1117;
-  color: #c9d1d9;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
   scroll-behavior: smooth;
+  line-height: 1.6;
+  font-size: clamp(14px, 1.2vw, 18px);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10px;
+  background-image: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+  animation: backgroundShift 20s linear infinite;
+}
+
+@keyframes backgroundShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 section {
-  padding: 80px 20px;
+  padding: clamp(60px, 8vw, 80px) 20px;
   max-width: 1000px;
+  width: 100%;
   margin: auto;
+  background: rgba(15, 20, 25, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(88, 166, 255, 0.3);
+  backdrop-filter: blur(10px);
+  transition: box-shadow var(--transition-speed);
+}
+
+section:hover {
+  box-shadow: 0 0 20px var(--primary-color);
 }
 
 a {
-  color: #58a6ff;
+  color: var(--primary-color);
   text-decoration: none;
+  position: relative;
+  font-weight: 600;
+  transition: color var(--transition-speed);
 }
 
-a:hover {
-  text-decoration: underline;
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: var(--primary-color);
+  left: 0;
+  bottom: -4px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition-speed);
+}
+
+a:hover,
+a:focus {
+  color: #79b8ff;
+}
+
+a:hover::after,
+a:focus::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 40px 15px;
+    box-shadow: none;
+    backdrop-filter: none;
+    background: transparent;
+  }
+  
+  body {
+    font-size: clamp(13px, 2vw, 16px);
+    padding: 0 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  
+  section {
+    padding: 30px 10px;
+  }
 }
