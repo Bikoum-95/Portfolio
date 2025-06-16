@@ -7,5 +7,5 @@ export default function About() {
         Je cherche une alternance et un job étudiant, tout en m’investissant dans des projets techniques modernes.
       </p>
     </section>
-  )
+  );
 }

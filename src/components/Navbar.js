@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 
 export default function Navbar() {
   return (
@@ -12,9 +12,9 @@ export default function Navbar() {
         <a href="#projects">Projets</a>
         <a href="#contact">Contact</a>
         <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-        <a href="https://github.com/tonpseudo" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/tonprofil" target="_blank">LinkedIn</a>
+        <a href="https://github.com/tonpseudo" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/tonprofil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </nav>
-  )
+  );
 }
