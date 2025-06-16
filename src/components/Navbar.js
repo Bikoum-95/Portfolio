@@ -1,44 +1,21 @@
-// components/Navbar.js
-import { useState, useEffect } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import styles from "../styles/Navbar.module.css";
-import { FiMenu, FiX } from "react-icons/fi";
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Navbar() {
-  const [activeSection, setActiveSection] = useState("");
-  const [menuOpen, setMenuOpen] = useState(false);
-  const router = useRouter();
-
-  useEffect(() => {
-    setActiveSection(router.pathname);
-    setMenuOpen(false); // Fermer le menu au changement de route
-  }, [router.pathname]);
-
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.navContainer}>
-        <div className={styles.logo}>BKMFOLIO</div>
-
-        <div className={styles.burger} onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
-        </div>
-
-        <ul className={`${styles.navLinks} ${menuOpen ? styles.showMenu : ""}`}>
-          <li className={activeSection === "/" ? styles.active : ""}>
-            <Link href="/">Home</Link>
-          </li>
-          <li className={activeSection === "/about" ? styles.active : ""}>
-            <Link href="/about">About</Link>
-          </li>
-          <li className={activeSection === "/projects" ? styles.active : ""}>
-            <Link href="/projects">Projects</Link>
-          </li>
-          <li className={activeSection === "/contact" ? styles.active : ""}>
-            <Link href="/contact">Contact</Link>
-          </li>
-        </ul>
+    <nav style={{
+      display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+      padding: '20px', backgroundColor: '#161b22', position: 'sticky', top: 0, zIndex: 1000
+    }}>
+      <Image src="/logo.png" alt="Logo" width={40} height={40} />
+      <div style={{ display: 'flex', gap: '20px' }}>
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+        <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        <a href="https://github.com/tonpseudo" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/tonprofil" target="_blank">LinkedIn</a>
       </div>
     </nav>
-  );
+  )
 }
