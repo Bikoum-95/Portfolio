@@ -6,7 +6,7 @@ export default function Navbar() {
       display: 'flex', justifyContent: 'space-between', alignItems: 'center',
       padding: '20px', backgroundColor: '#161b22', position: 'sticky', top: 0, zIndex: 1000
     }}>
-      <Image src="/logo.png" alt="Logo" width={40} height={40} />
+      <Image src="/bkm.jpg" alt="Logo" width={40} height={40} />
       <div style={{ display: 'flex', gap: '20px' }}>
         <a href="#about">À propos</a>
         <a href="#projects">Projets</a>
