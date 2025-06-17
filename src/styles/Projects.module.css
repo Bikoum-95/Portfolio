@@ -26,6 +26,7 @@
   padding: 30px;
   box-shadow: 0 4px 30px rgba(88, 166, 255, 0.15);
   transition: transform 0.4s, box-shadow 0.4s;
+  min-height: 600px;
 }
 
 .card:hover {
@@ -37,7 +38,8 @@
   margin-bottom: 20px;
 }
 
-.image, .video {
+.image,
+.video {
   border-radius: 12px;
   width: 100%;
   height: auto;
@@ -66,6 +68,15 @@
   flex-wrap: wrap;
 }
 
+.techIcons img {
+  filter: invert(80%);
+  transition: transform 0.3s;
+}
+
+.techIcons img:hover {
+  transform: scale(1.15);
+}
+
 .button {
   display: inline-block;
   padding: 12px 25px;
@@ -75,6 +86,8 @@
   font-weight: bold;
   text-decoration: none;
   transition: background 0.3s, transform 0.3s;
+  margin: 5px; 
+  text-align: center;
 }
 
 .button:hover {
