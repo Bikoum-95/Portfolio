@@ -1,85 +1,91 @@
 .projectsContainer {
-  padding: 80px 20px;
-  max-width: 1200px;
+  padding: 100px 20px;
+  max-width: 1400px;
   margin: auto;
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   color: #58a6ff;
-  text-shadow: 0 0 5px rgba(88, 166, 255, 0.5);
+  text-shadow: 0 0 10px rgba(88, 166, 255, 0.6);
+  letter-spacing: 1px;
 }
 
 .projectsWrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 40px;
 }
 
 .card {
-  background: rgba(13, 17, 23, 0.9);
+  background: rgba(13, 17, 23, 0.95);
   border: 1px solid #30363d;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 0 15px rgba(88, 166, 255, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 30px rgba(88, 166, 255, 0.15);
+  transition: transform 0.4s, box-shadow 0.4s;
 }
 
 .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 25px rgba(88, 166, 255, 0.4);
+  transform: translateY(-15px);
+  box-shadow: 0 0 40px rgba(88, 166, 255, 0.5);
 }
 
 .imageWrapper {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .image, .video {
-  border-radius: 8px;
+  border-radius: 12px;
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .cardTitle {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #c9d1d9;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 .cardDescription {
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #8b949e;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  line-height: 1.5;
 }
 
 .techIcons {
   display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
   flex-wrap: wrap;
 }
 
 .button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 25px;
   background: #58a6ff;
   color: #0d1117;
-  border-radius: 8px;
+  border-radius: 10px;
   font-weight: bold;
   text-decoration: none;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.3s;
 }
 
 .button:hover {
   background: #79b8ff;
+  transform: scale(1.05);
 }
 
 .fadeIn {
   opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 0.8s forwards;
+  transform: translateY(30px);
+  animation: fadeIn 1s forwards;
 }
 
 @keyframes fadeIn {
