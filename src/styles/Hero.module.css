@@ -1,0 +1,45 @@
+.hero {
+  padding: 100px 20px 60px;
+  background: #0d1117;
+  color: #c9d1d9;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  text-align: center;
+  gap: 30px;
+}
+
+.text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #58a6ff;
+  text-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  color: #8b949e;
+}
+
+.imageWrapper {
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 30px rgba(88, 166, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  border-radius: 50%;
+  object-fit: cover;
+}
