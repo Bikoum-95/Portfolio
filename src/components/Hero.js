@@ -7,16 +7,17 @@ export default function Hero() {
       <div className={styles.content}>
         <div className={styles.text}>
           <h1>
-            Salut, moi c’est <span className={styles.highlight}>[Ton Prénom]</span>
+            Enchanté, moi c’est <span className={styles.highlight}>Soren</span>
           </h1>
           <p className={styles.subtitle}>
-            Développeur passionné – alternance & job étudiant
+            Jeune développeur ambitieux, curieux et prêt à relever chaque défi.  
+            En quête d'une <strong>alternance</strong> et d'un <strong>job étudiant</strong> pour transformer chaque ligne de code en vraie expérience terrain.
           </p>
         </div>
 
         <div className={styles.imageWrapper}>
           <Image
-            src="/profil.jpg"
+            src="/large_1.jpg"
             alt="Photo de profil"
             width={250}
             height={250}

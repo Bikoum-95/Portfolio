@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Portfolio | [Ton Prénom]</title>
-        <meta name="description" content="Portfolio personnel de [Ton Prénom] - Développeur Web & Data" />
+        <title>BKMfolio</title>
+        <meta name="description" content="Développeur Web & Data - Support Technique" />
       </Head>
       <Navbar />
       <main>

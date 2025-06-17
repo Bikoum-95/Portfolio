@@ -11,9 +11,9 @@ export default function Navbar() {
         <a href="#about">À propos</a>
         <a href="#projects">Projets</a>
         <a href="#contact">Contact</a>
-        <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">CV</a>
-        <a href="https://github.com/tonpseudo" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/tonprofil" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="/CV-DF.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        <a href="https://github.com/Bikoum-95" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/soren-bikoumou-b1b840357/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       </div>
     </nav>
   );
