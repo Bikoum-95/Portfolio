@@ -15,7 +15,7 @@ const projects = [
         description: "Mini CRM avec Next.js, Prisma et PostgreSQL — Authentification, gestion client, dashboard.",
         image: "/crm.png",
         github: "https://github.com/tonpseudo/crm-next",
-        techs: ["nextjs", "prisma", "postgresql", "typescript"]
+        techs: ["nextdotjs", "prisma", "postgresql", "typescript"]
     },
     {
         title: "Arduino - ETNAThermos",
@@ -36,7 +36,7 @@ const projects = [
         description: "Application GoLang pour la génération de PDF personnalisés.",
         pdf: "/Piratetetr.pdf",
         github: "https://github.com/Bikoum-95/GeneratorPrime",
-        techs: ["golang", "pdf"]
+        techs: ["golang", "adobeacrobatreader"]
     }
 ];
 
@@ -44,38 +44,41 @@ export default function Projects() {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        setTimeout(() => setIsVisible(true), 300);
+        const timer = setTimeout(() => setIsVisible(true), 300);
+        return () => clearTimeout(timer);
     }, []);
 
     return (
-        <section id="projects" className={`${styles.projectsContainer} ${isVisible ? styles.fadeIn : ""}`}>
+        <section
+            id="projects"
+            className={`${styles.projectsContainer} ${isVisible ? styles.fadeIn : ""}`}
+        >
             <h2 className={styles.title}>Mes Projets</h2>
 
             <div className={styles.projectsWrapper}>
                 {projects.map((project, index) => (
                     <div key={index} className={styles.card}>
                         <div className={styles.imageWrapper}>
-                            {project.image ? (
-                                project.image.endsWith(".mp4") ? (
-                                    <video controls className={styles.video}>
-                                        <source src={project.image} type="video/mp4" />
-                                        Votre navigateur ne supporte pas la lecture vidéo.
-                                    </video>
-                                ) : (
-                                    <Image
-                                        src={project.image}
-                                        alt={project.title}
-                                        width={400}
-                                        height={250}
-                                        className={styles.image}
-                                    />
-                                )
+                            {project.image && project.image.endsWith(".mp4") ? (
+                                <video controls className={styles.video}>
+                                    <source src={project.image} type="video/mp4" />
+                                    Votre navigateur ne supporte pas la lecture vidéo.
+                                </video>
+                            ) : project.image ? (
+                                <Image
+                                    src={project.image}
+                                    alt={project.title}
+                                    width={400}
+                                    height={250}
+                                    className={styles.image}
+                                />
                             ) : project.pdf ? (
                                 <iframe
                                     src={project.pdf}
                                     width="100%"
                                     height="250px"
                                     style={{ border: "none" }}
+                                    title={project.title}
                                 ></iframe>
                             ) : null}
                         </div>
@@ -85,13 +88,14 @@ export default function Projects() {
 
                         <div className={styles.techIcons}>
                             {project.techs.map((tech, i) => (
-                                <Image 
-                                    key={i} 
-                                    src={`/icons/${tech}.svg`} 
-                                    alt={tech} 
-                                    width={30} 
-                                    height={30} 
+                                <Image
+                                    key={i}
+                                    src={`https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/${tech.toLowerCase()}.svg`}
+                                    alt={tech}
+                                    width={30}
+                                    height={30}
                                     title={tech.toUpperCase()}
+                                    onError={(e) => (e.target.style.display = "none")}
                                 />
                             ))}
                         </div>

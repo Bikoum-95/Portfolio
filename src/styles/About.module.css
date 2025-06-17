@@ -1,0 +1,32 @@
+.aboutContainer {
+  padding: 100px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.aboutTitle {
+  font-size: 2.8rem;
+  color: #58a6ff;
+  text-shadow: 0 0 10px rgba(88, 166, 255, 0.6);
+  margin-bottom: 50px;
+}
+
+.aboutDescription {
+  font-size: 1.3rem;
+  color: #c9d1d9;
+  line-height: 1.8;
+}
+
+.fadeIn {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
